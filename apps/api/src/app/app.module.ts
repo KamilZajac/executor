@@ -4,11 +4,12 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import {MongooseModule} from '@nestjs/mongoose';
 import {ExecModule} from '@executor/api/exec';
-import {LogsModule} from '../../../../libs/api/logs/src/lib/logs.module';
+import {LogsModule} from '@executor/api/logs';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/executor'),
+    MongooseModule.forRoot('mongodb://mongo:27017/api'),
+    // MongooseModule.forRoot('mongodb://localhost/api'),
     ExecModule,
     LogsModule
   ],

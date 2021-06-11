@@ -3,7 +3,7 @@
 
   <form [formGroup]="form">
 
-    <input type="text" placeholder="f.e 'uname -a'" formControlName="command">
+    <input type="text" placeholder="f.e 'uname', 'ls' , 'pwd'" formControlName="command">
 
     <button (click)="submit()" [disabled]="!form.valid">Execute!</button>
 
