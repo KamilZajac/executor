@@ -15,9 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@executor/exec": ["libs/exec/src/index.ts"],
+      "@executor/api/exec": ["libs/api/exec/src/index.ts"],
       "@executor/dto": ["libs/dto/src/index.ts"],
-      "@executor/schemas": ["libs/schemas/src/index.ts"]
+      "@executor/schemas": ["libs/schemas/src/index.ts"],
+      "@executor/interfaces": ["libs/interfaces/src/index.ts"],
+      "@executor/api/logs": ["libs/api/logs/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
