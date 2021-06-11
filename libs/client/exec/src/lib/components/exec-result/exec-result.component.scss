@@ -1,0 +1,22 @@
+.exec-result {
+  margin-top: 2rem;
+  white-space: pre-line;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  padding: 2rem;
+  background: rgba(255,255,255,.8);
+  max-height: 0;
+  overflow: hidden;
+  animation: expand .4s ease-in-out forwards;
+
+}
+
+@keyframes expand {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 500px;
+    overflow: auto;
+  }
+}

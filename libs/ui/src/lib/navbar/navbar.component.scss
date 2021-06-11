@@ -1,0 +1,44 @@
+.navbar {
+  align-items: center;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 0 2rem;
+  display: flex;
+
+  .container {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .logo {
+    h4 {
+      color: #000;
+      font-size: 1.6rem;
+      font-family: 'Audiowide', cursive;
+    }
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    color: #000;
+
+
+    li {
+      font-weight: 600;
+      margin-left: 1rem;
+      cursor: pointer;
+      opacity: .7;
+      transition: .3s;
+
+      &.active, &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

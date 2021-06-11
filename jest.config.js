@@ -7,5 +7,9 @@ module.exports = {
     '<rootDir>/libs/schemas',
     '<rootDir>/libs/interfaces',
     '<rootDir>/libs/api/logs',
+    '<rootDir>/libs/client/exec',
+    '<rootDir>/libs/client/logs',
+    '<rootDir>/libs/ui',
+    '<rootDir>/libs/services',
   ],
 };

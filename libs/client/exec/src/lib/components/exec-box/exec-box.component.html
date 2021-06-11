@@ -1,0 +1,11 @@
+<div class="exec-box">
+  <h4>Type in your command</h4>
+
+  <form [formGroup]="form">
+
+    <input type="text" placeholder="f.e 'uname -a'" formControlName="command">
+
+    <button (click)="submit()" [disabled]="!form.valid">Execute!</button>
+
+  </form>
+</div>

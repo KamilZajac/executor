@@ -1,0 +1,40 @@
+.exec-box {
+
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  padding: 2rem;
+  background: #fff;
+  h4 {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    input{
+      padding: 1rem .5rem;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      margin-bottom: 1rem;
+    }
+
+    button{
+      background: none;
+      border-radius: 5px;
+      padding: .5rem;
+      background: #fe4a49;  /* fallback for old browsers */
+      color: #fff;
+      transition: .3s ease-in-out;
+      border: 1px solid transparent;
+      cursor: pointer;
+      &:disabled{
+        background: #fff;
+        border: 1px solid #eee;
+        color: #ddd
+      }
+    }
+  }
+}

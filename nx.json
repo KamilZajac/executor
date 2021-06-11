@@ -43,6 +43,18 @@
     },
     "api-logs": {
       "tags": []
+    },
+    "client-exec": {
+      "tags": []
+    },
+    "client-logs": {
+      "tags": []
+    },
+    "ui": {
+      "tags": []
+    },
+    "services": {
+      "tags": []
     }
   }
 }

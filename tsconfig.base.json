@@ -19,7 +19,11 @@
       "@executor/dto": ["libs/dto/src/index.ts"],
       "@executor/schemas": ["libs/schemas/src/index.ts"],
       "@executor/interfaces": ["libs/interfaces/src/index.ts"],
-      "@executor/api/logs": ["libs/api/logs/src/index.ts"]
+      "@executor/api/logs": ["libs/api/logs/src/index.ts"],
+      "@executor/client/exec": ["libs/client/exec/src/index.ts"],
+      "@executor/client/logs": ["libs/client/logs/src/index.ts"],
+      "@executor/ui": ["libs/ui/src/index.ts"],
+      "@executor/services": ["libs/services/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
