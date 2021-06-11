@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LogsComponent } from './containers/logs/logs.component';
 import {RouterModule, Routes} from '@angular/router';
+import {LogsService} from '@executor/services';
+import {HttpClientModule} from '@angular/common/http';
+import { SingleLogComponent } from './components/single-log/single-log.component';
+import {InfiniteScrollModule} from 'ngx-infinite-scroll';
 
 const routes: Routes = [
   {
@@ -14,10 +18,16 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    HttpClientModule,
+    InfiniteScrollModule
   ],
   declarations: [
-    LogsComponent
+    LogsComponent,
+    SingleLogComponent
   ],
+  providers: [
+    LogsService
+  ]
 })
 export class ClientLogsModule {}

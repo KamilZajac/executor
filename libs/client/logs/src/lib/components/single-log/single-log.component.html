@@ -1,0 +1,6 @@
+<div class="log" *ngIf="log">
+  <p class="remove" (click)="remove()">Remove</p>
+  <p><b>Created at:</b> {{log.createdAt | date:'y-MM-dd HH:mm'}}</p>
+  <p><b>Status</b>: <span [ngClass]="log.status">{{log.status}}</span></p>
+  <p class="result">{{log.response}}</p>
+</div>

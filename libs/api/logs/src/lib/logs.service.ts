@@ -13,11 +13,12 @@ export class LogsService {
     const resPageSize = pageSize || 10;
     const resPage = page > 0 ? page : 1;
 
-    const total = await this.execLogDocument.count();
+    const total = await this.execLogDocument.countDocuments();
     const totalPages = Math.ceil(total / pageSize );
 
     const entries: ExecLogDocument[] = await this.execLogDocument
       .find()
+      .sort( { createdAt : -1} )
       .limit(resPageSize)
       .skip( (resPage - 1) * 10);
 

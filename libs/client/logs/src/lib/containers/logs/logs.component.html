@@ -1,1 +1,13 @@
-<p>logs works!</p>
+<div class="logs"
+     infiniteScroll
+     [infiniteScrollDistance]="2"
+     [infiniteScrollThrottle]="100"
+     (scrolled)="onScroll()"
+     [scrollWindow]="true"
+>
+  <executor-single-log
+    *ngFor="let log of logs"
+    [log]="log"
+    (onRemove)="removeLog(log._id)"
+  ></executor-single-log>
+</div>

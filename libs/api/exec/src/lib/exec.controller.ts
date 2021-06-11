@@ -1,7 +1,7 @@
 import {Body, Controller, Post} from '@nestjs/common';
 import {ExecService} from './exec.service';
 import {ExecuteDto} from '@executor/dto';
-import {ExecLog} from '@executor/schemas';
+import {ExecLogDocument} from '@executor/schemas';
 
 @Controller('exec')
 export class ExecController {
@@ -9,7 +9,7 @@ export class ExecController {
   }
 
   @Post('')
-  executeCommand(@Body() execBody: ExecuteDto): Promise<ExecLog> {
+  executeCommand(@Body() execBody: ExecuteDto): Promise<ExecLogDocument> {
     return this.execService.execute(execBody)
   }
 }

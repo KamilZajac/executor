@@ -1,0 +1,39 @@
+.log {
+  margin-top: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  padding: 2rem;
+  position: relative;
+  background: rgba(255,255,255,.8);
+  ;
+  b{
+    font-weight: 600;
+  }
+  p {
+    padding: .5rem;
+  }
+  .result {
+    margin-top: .5rem;
+    background: rgba(70, 83, 97, .1);
+    padding: .5rem;
+    white-space: pre-line;
+    font-family: monospace;
+    border-radius: 4px;
+  }
+
+  .remove {
+    color: #fe4a49;
+    font-size: .9rem;
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  .success{
+    color: darkgreen;
+  }
+  .error{
+    color: #fe4a49;
+  }
+}

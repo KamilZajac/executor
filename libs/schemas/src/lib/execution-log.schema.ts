@@ -15,6 +15,13 @@ export class ExecLog {
 
   @Prop()
   status: string
+
+  @Prop()
+  createdAt: Date
+
+  @Prop()
+  updatedAt: Date
+
 }
 
 export const ExecLogSchema = SchemaFactory.createForClass(ExecLog);

@@ -46,6 +46,7 @@
     "class-validator": "^0.13.1",
     "helmet": "^4.6.0",
     "mongoose": "^5.12.13",
+    "ngx-infinite-scroll": "^10.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
