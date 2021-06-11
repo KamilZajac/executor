@@ -25,6 +25,18 @@
     "client-e2e": {
       "tags": [],
       "implicitDependencies": ["client"]
+    },
+    "api": {
+      "tags": []
+    },
+    "exec": {
+      "tags": []
+    },
+    "dto": {
+      "tags": []
+    },
+    "schemas": {
+      "tags": []
     }
   }
 }
