@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@executor/exec": ["libs/exec/src/index.ts"],
+      "@executor/dto": ["libs/dto/src/index.ts"],
+      "@executor/schemas": ["libs/schemas/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
