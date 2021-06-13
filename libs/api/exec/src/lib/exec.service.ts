@@ -1,10 +1,9 @@
-import {Injectable, NotFoundException} from '@nestjs/common';
+import {Injectable} from '@nestjs/common';
 import {ExecuteDto} from '@executor/dto';
 import {exec} from 'child_process';
 import {ExecLog, ExecLogDocument} from '@executor/schemas';
 import {InjectModel} from '@nestjs/mongoose';
 import {Model} from 'mongoose';
-import {ExecLogCollectionResponse} from '@executor/interfaces';
 
 interface ExecResponse {
   status: string,

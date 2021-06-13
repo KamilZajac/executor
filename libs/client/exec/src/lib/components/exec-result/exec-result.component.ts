@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {ExecLogDocument} from '@executor/schemas';
 
 @Component({
@@ -7,5 +7,5 @@ import {ExecLogDocument} from '@executor/schemas';
   styleUrls: ['./exec-result.component.scss']
 })
 export class ExecResultComponent {
-  @Input() execResult: ExecLogDocument | null
+  @Input() execResult: ExecLogDocument | null = null;
 }

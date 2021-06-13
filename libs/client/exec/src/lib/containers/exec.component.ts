@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {ExecuteService} from '@executor/services';
-import {Observable} from 'rxjs';
+import {Observable, of} from 'rxjs';
 import {ExecLogDocument} from '@executor/schemas';
 
 @Component({
@@ -9,7 +9,7 @@ import {ExecLogDocument} from '@executor/schemas';
   styleUrls: ['./exec.component.scss']
 })
 export class ExecComponent {
-  execResult$: Observable<ExecLogDocument>;
+  execResult$: Observable<ExecLogDocument> = of();
 
   constructor(private execService: ExecuteService) { }
 

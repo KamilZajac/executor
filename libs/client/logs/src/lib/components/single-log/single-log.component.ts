@@ -7,7 +7,7 @@ import {ExecLogDocument} from '@executor/schemas';
   styleUrls: ['./single-log.component.scss']
 })
 export class SingleLogComponent {
-  @Input() log: ExecLogDocument;
+  @Input() log: ExecLogDocument | null = null;
   @Output() onRemove = new EventEmitter()
 
   public remove() {

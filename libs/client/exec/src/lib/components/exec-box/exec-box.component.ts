@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {FormGroup} from '@angular/forms';
 import {execBoxForm} from './exec-box.form';
 
@@ -7,14 +7,9 @@ import {execBoxForm} from './exec-box.form';
   templateUrl: './exec-box.component.html',
   styleUrls: ['./exec-box.component.scss']
 })
-export class ExecBoxComponent implements OnInit {
+export class ExecBoxComponent {
   @Output() onSubmit = new EventEmitter<string>();
   form: FormGroup = execBoxForm;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   public submit() {
     if(!this.form.valid){

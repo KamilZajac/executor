@@ -27,7 +27,6 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "build-images": "bash build.sh"
-
   },
   "private": true,
   "dependencies": {

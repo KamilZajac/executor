@@ -18,7 +18,7 @@ export class LogsService {
     @Inject('apiURL') private apiURL: string
   ) { }
 
-  fetchLogs(params: FetchLogsParams): Observable<ExecLogCollectionResponse> {
+  public fetchLogs(params: FetchLogsParams): Observable<ExecLogCollectionResponse> {
     return this.http.get<ExecLogCollectionResponse>(`${this.apiURL}/logs`, {params: {...params}});
   }
 

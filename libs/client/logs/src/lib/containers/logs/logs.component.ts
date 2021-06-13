@@ -10,7 +10,7 @@ import {ExecLogDocument} from '@executor/schemas';
 export class LogsComponent implements OnInit {
   logs: ExecLogDocument[] = [];
   page: number = 1;
-  maxPage: number;
+  maxPage: number = 0;
 
   constructor(private logsService: LogsService) { }
 
@@ -18,14 +18,14 @@ export class LogsComponent implements OnInit {
     this.fetchLogs()
   }
 
-  private fetchLogs() {
+  private fetchLogs(): void  {
     this.logsService.fetchLogs({page: this.page}).subscribe(logs => {
       this.maxPage = logs.totalPages
       this.logs.push(...logs.entries)
     })
   }
 
-  public removeLog(id: string) {
+  public removeLog(id: string): void  {
     const confirmDelete = confirm('Do you really want to delete this log?');
 
     if(confirmDelete) {
@@ -35,7 +35,7 @@ export class LogsComponent implements OnInit {
     }
   }
 
-  public onScroll() {
+  public onScroll(): void  {
     if(this.page !== this.maxPage) {
       this.page++;
       this.fetchLogs()

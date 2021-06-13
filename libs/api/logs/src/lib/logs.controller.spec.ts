@@ -1,5 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { LogsController } from './api-logs.controller';
+import {LogsController} from './logs.controller';
+import {LogsService} from '@executor/services';
 
 describe('ApiLogsController', () => {
   let controller: LogsController;
@@ -7,9 +8,10 @@ describe('ApiLogsController', () => {
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [LogsController],
+      providers: [LogsService]
     }).compile();
 
-    controller = module.get<LogsController>(LogsController);
+    controller = module.get(LogsController);
   });
 
   it('should be defined', () => {
